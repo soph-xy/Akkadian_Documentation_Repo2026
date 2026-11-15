@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # NLP Pipeline
 
 On this page, we provide a high-level overview of the machine translation pipeline. Specifics of certain parts are later described in greater detail in their own, respective sections. 
@@ -17,12 +19,12 @@ The first step is to gather data to train our model. For machine translation, th
 
 Typically, a dataset will contain the original text in Akkadian, a transcription using the Latin alphabet, and a corresponding target **translation** in English. For instance, in the <a href="https://www.kaggle.com/datasets/manwithacat/mtm24-akkadian-transliteration/data" title="mtm24 kaggle dataset">MTM24 Akkadian Cuneiform Transliteration Dataset</a>, the data is formatted in columns, as pictured below:
 
-[insert visual]
+<img src={useBaseUrl('img/Photo_of_KaggleDataset.jpeg')} alt="Dataset Example"/>
 
 #### Definitions:
 
 1. **Parallel corpus**: A collection of texts containing the original text in the source language and its corresponding translation in the target language, aligned at the sentence or phrase level in columns. 
-2. **Transliteration**: The representation of text in one language to a different writing system based on phonetics at the symbol level.
+2. **Transliteration**: The representation of text in one language to a different writing system based on phonetics at the symbol level. The model works with the transliteration of the text.
 3. **Translation**: The conversion of text in one language to another while preserving the meaning of the original text. 
 4. **Cuneiform**: The wedge-shaped writing system used in Akkadian.
 
@@ -58,12 +60,12 @@ Akkadian is a low resource language, so translated datasets that are readily ava
 
 ## 5\. Continued Training ByT5 
 
-**ByT5**, the model from which we built our Akkadian-to-English model, is already trained on many languages; it was trained on mC4, a large collection of text spanning 102 languages. It was trained without any supervised training, meaning it learned to recognize general patterns of language but was never taught to translate. We trained it on the datasets we gathered, including both real and synthetic examples, so that it became familiar with Akkadian-to-English translation.
+**ByT5**, the model from which we built our Akkadian-to-English model, is already trained on many languages; it was trained on mC4, a large collection of text spanning 102 languages. It was trained without any supervised training, meaning it learned to recognize general patterns of language but was never taught to translate. We trained it on the datasets we gathered, including both real and synthetic examples, so that it became familiar with Akkadian-to-English translation. Examples are individual Akkadian-to-English pairs in the datasets.
 
 #### Definitions:
 1. **Pre-training**: The first large round of training a model gets on lots of text. A model is first pre-trained on a data-rich task and then fine-tuned on a specific task. Depending on the number of parameters, pre-training can be extremely costly. For our case, training a model from scratch is unfeasible due to the cost barrier. 
 2. **ByT5**: A tokenizer-free transformer that works on the byte-level.
-3. **Transformer**: A neural network design that processes all tokens of input sequences in parallel, instead of one at a time. The mechanism that transformers use is known as attention, which will be explained in great detail later.
+3. **Transformer**: A neural network design that processes all tokens of input sequences in parallel, instead of one at a time. The mechanism that transformers use is known as attention, which will be explained in greater detail later.
 
 
 ## 6\. Fine Tuning

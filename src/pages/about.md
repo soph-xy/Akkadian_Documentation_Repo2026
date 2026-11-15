@@ -18,27 +18,27 @@ Language shouldn't determine who gets access to technology. As AI becomes more c
 
 # About Us
 
-We are a team of high schoolers [et cetera et cetera]
+We are a team of high schoolers in the Northeast United States. 
 
 <div className="container">
   <div className="row">
     <div className="col col--4">
       <h3>person 1</h3>
-      <p>bio</p>
+      <p>Vivian is a senior attending Horace Mann School in New York. She is passionate about math and classics, having studied Latin for over 5 years. She is interested in using AI to translate Akkadian because it lies at the intersection of her interests in AI and ancient languages, and helps address the digital divide caused by AI’s underperformance in low-resource languages.</p>
     </div>
     <div className="col col--4">
       <h3>person 2</h3>
-      <p>bio</p>
+      <p>Sophia is a junior at Newark Academy in New Jersey. She enjoys engineering, math, and robotics. Her previous experiences in coding and game design have led to her interest in this project, and to her role as the web developer.</p>
     </div>
     <div className="col col--4">
       <h3>person 3</h3>
-      <p>bio</p>
+      <p>Jean is a junior at NVOT in New Jersey with a passion for mathematics and data. She enjoys exploring and working out solutions for real world problems. Outside of academics, she enjoys reading in her free time.</p>
     </div>
   </div>
   <div className="row">
     <div className="col col--4">
       <h3>person 4</h3>
-      <p>bio</p>
+      <p>Kate is a junior at NVOT in New Jersey. She is passionate about math and science, with a particular interest in healthcare and technologies that can help others. Her experience volunteering at a medical center for over 200 hours has strengthened her interest in healthcare and making a positive impact on people's lives.</p>
     </div>
     <div className="col col--4">
       <h3>person 5</h3>

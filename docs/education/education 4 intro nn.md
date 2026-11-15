@@ -2,6 +2,8 @@
 sidebar_position: 4
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Introduction to Neural Networks
 
 Neural networks are a type of machine learning model that learns patterns from a set of data in order to make predictions and generate outputs. They are a fundamental building block of modern artificial intelligence, and are used in applications such as image recognition, speech processing, recommendation systems, and more.
@@ -17,7 +19,9 @@ At a high level, a neural network takes an input, processes it through at least 
 
 Each artificial neuron receives numerical inputs, combines them using adjustable values called **weights**, adds a **bias**, and applies an **activation function**. Afterwards, the signal is passed onto the next layer.
 
-[image here maybe?]
+<img src={useBaseUrl('/img/neural_network_photo.jpeg')} style={{ width: 400 }} alt="Neural Network Example" />
+
+In the image above, the red circles represent the input, while the blue and green circles represent the neurons of the hidden layer and output layer respectively. 
 
 The network’s behavior is largely determined by its weights and biases. During training, these parameters are adjusted so that the outputs become more accurate or more suited to the task.
 
@@ -47,3 +51,4 @@ Understanding these limitations is important when evaluating and deploying neura
 2. https://www.ibm.com/think/topics/neural-networks
 3. https://openstax.org/books/principles-data-science/pages/7-1-introduction-to-neural-networks
 4. https://developers.google.com/machine-learning/crash-course/neural-networks
+5. Image taken from https://en.wikipedia.org/wiki/Neural_network_(machine_learning)

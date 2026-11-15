@@ -10,10 +10,10 @@ Definitions:
 
 1.  **Preprocessing** means preparing the text to be ready for a model.
 2. **Cleaning** means fixing or removing things that would confuse the model.
-3. **Filtering** means keeping the good examples and throwing out the rest.
+3. **Filtering** means keeping the good examples of translations and discarding the rest.
 4. **Cleaning** and **filtering** are both components of **preprocessing**. 
     
-**About the code on this page:** the snippets come from our project's code. We added or rewrote the comments to better explain what the code does. Lines starting with # are comments. 
+The snippets below come from our project's code. We added or rewrote the comments to better explain what the code does. Lines starting with # are comments. 
 
 ### 1. Why clean the data?
 
@@ -41,7 +41,7 @@ Here is an example of how our function cleans the text. The actual lines used to
 
 **After:** ```um-ma <gap> qí-bi4-ma a-na <gap> š-ma {d}UTU```
 
-**The code.** Most steps above are a simple find-and-replace. The damaged-text step uses a **regular expression** (also known as **regex**), a pattern for finding text. One pattern can match many different ways of writing the same thing:
+**The code.** Most steps above are a simple find-and-replace. The damaged-text step uses a **regular expression** (also known as **regex**), which defines a pattern used to find text. One pattern can match many different ways of writing the same thing:
 
 ```
 text = unicodedata.normalize('NFC', text)               # one standard way to store each letter
