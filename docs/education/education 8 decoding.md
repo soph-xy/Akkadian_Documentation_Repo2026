@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Decoding
+# Decoding Text
 
 After the model processes an Akkadian input, it must generate the corresponding English translation. This process of turning the model’s predictions into an output is called **decoding**. 
 
@@ -20,7 +20,7 @@ If the translation for an Akkadian sentence begins with the words quoted above, 
 
 Each possibility will be given a score on how likely it is correct. These scores will directly influence the final translation. (The model is based on ByT5 which generates text at the byte level rather than whole words. The examples are written in words since it is easier to visualize.)
 
-### Beam Search
+## Beam Search
 
 One common decoding method used in machine translation is **beam search**. 
 
@@ -46,7 +46,7 @@ The model will continue to generate the next possible translations from both: 
 
 They will each receive new scores, compared, and the strongest candidates are kept again. This process will repeat until the model reaches the end of the translation. Allowing several possibilities to be kept will produce better outcomes. 
 
-### Definitions
+## Definitions
 
 1.  **Decoding**: The process of converting a model’s predictions into an output
     
@@ -59,6 +59,6 @@ They will each receive new scores, compared, and the strongest candidates are ke
 5.  **Sequence score**: The value that represents how likely it would be as a possible output
     
 
-### Sources
+## Sources
 - https://huggingface.co/docs/transformers/generation_strategies
 - https://d2l.ai/chapter_recurrent-modern/beam-search.html

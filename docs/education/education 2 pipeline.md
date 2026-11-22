@@ -86,7 +86,7 @@ To check how good our translations are, we compare the model's English output wi
 3. **ChRF++**: measures accuracy on a character and word level
 4. **Geometric mean**: In this context, the geometric mean is the square root of the product of the two scores.
 
-## Sources:
+## Sources
 1. https://www.geeksforgeeks.org/nlp/natural-language-processing-nlp-pipeline/ 
 2. https://huggingface.co/docs/transformers/model_doc/byt5 
 3. https://huggingface.co/google/byt5-xl 

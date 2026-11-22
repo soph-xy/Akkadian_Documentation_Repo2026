@@ -65,7 +65,7 @@ Output: 
 
 **Summary**: Word2Vec demonstrates how computers can learn numerical representations of words. ByT5 builds on the broader idea of numerical representations but begins with bytes, allowing it to process Akkadian text without relying on a fixed vocabulary of complete words.
 
-## Resources
+## Sources
 - https://arxiv.org/abs/1301.3781
 - https://aclanthology.org/2022.tacl-1.17/
 - https://www.unicode.org/reports/tr17/

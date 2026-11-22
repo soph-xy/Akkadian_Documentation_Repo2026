@@ -103,9 +103,9 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-          {to: '/about', label: 'About', position: 'left'},
+          {to: '/about', label: 'The Team', position: 'left'},
           /*{type: 'docSidebar', sidebarId: 'creationSidebar', label: 'Creating the System', position: 'left'},*/
-          {type: 'docSidebar', sidebarId: 'educationSidebar', label: 'Creating the System + Educational Content', position: 'left'},
+          {type: 'docSidebar', sidebarId: 'educationSidebar', label: 'About the Project', position: 'left'},
           {to: '/past-workshops', label: 'Past Workshops', position: 'left'},
           {type: 'docSidebar', sidebarId: 'otherSidebar', label: 'Other Resources', position: 'left'}
         ],
@@ -126,16 +126,8 @@ const config = {
             title: 'Contact Us',
             items: [
               {
-                label: 'Stack Overflow (editable but idk what to put)',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord (should we make like. a carrd or something)',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X (i dont even know)',
-                href: 'https://x.com/docusaurus',
+                label: 'Email (currently set to my email)',
+                href: 'mailto:soph.xy.li@gmail.com',
               },
             ],
           },
@@ -143,17 +135,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog (please dont click this)',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/vvivi012/Akkadian_Documentation_Repo2026',
+                href: 'https://github.com/soph-xy/Akkadian_Documentation_Repo2026',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Akkadian Translation Project. Built with Docusaurus. (do we have copyright?)`,
+        /* copyright: `Copyright © ${new Date().getFullYear()} Akkadian Translation Project. Built with Docusaurus. (do we have copyright?)`, */
       },
       prism: {
         theme: prismThemes.github,

@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -21,7 +22,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/about">
-            Learn about the project!
+            Learn about us!
           </Link>
         </div>
       </div>
@@ -57,11 +58,10 @@ function Features() {
                 You might find some of these links helpful:
                 <br className="custom-break"/>
                 <ul>
-                <li>Want to learn more about the team? Try <a href="/about">this link</a>.</li>
-                <li>Curious about how the translation system was made? Visit <a href="/docs/creation/creation%201%20overview">our project overview</a>.</li>
-                <li>Interested in learning more about Natural Language Processing or Neural Networks? See <a href="/docs/education/education%201%20overview">our educational content</a> or have a look at some <a href="/docs/other/1%20other%20additional%20videos">other resources</a>.</li>
+                <li>Want to learn about the team? Try <a href="about">this link</a>.</li>
+                <li>Curious about how the translation system was made? Visit <a href="docs/education/education%201%20overview">our project overview</a>.</li>
+                <li>Interested in seeing more about Natural Language Processing or Neural Networks? Have a look at some <a href="docs/other/1%20other%20additional%20videos">other resources</a>.</li>
                 </ul>
-                <small>i made this before i realized creation + education were merged into one, this is a note to change the words/hyperlinks! also maybe figure out a better way to split so the tab up there doesn't look mega huge</small>
               </p>
             </div>
           </div>

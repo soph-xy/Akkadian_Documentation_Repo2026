@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Training a Neural Network
+# Training Neural Networks
 
 For a machine to learn how to translate a language, **training** is needed. Training involves showing a model examples repeatedly, measuring how well it predicts the correct output, and adjusting the internal parameters so that its predictions improve. 
 
