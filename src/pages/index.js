@@ -60,7 +60,7 @@ function Features() {
                 <ul>
                 <li>Want to learn about the team? Try <a href="about">this link</a>.</li>
                 <li>Curious about how the translation system was made? Visit <a href="docs/education/education%201%20overview">our project overview</a>.</li>
-                <li>Interested in seeing more about Natural Language Processing or Neural Networks? Have a look at some <a href="docs/other/1%20other%20additional%20videos">other resources</a>.</li>
+                <li>Interested in seeing more about Natural Language Processing or Neural Networks? Have a look at some <a href="docs/other/1%20other%20additional%20videos">resources</a>.</li>
                 </ul>
               </p>
             </div>
