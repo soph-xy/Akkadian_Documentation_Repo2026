@@ -55,7 +55,7 @@ The model then compares each query to every key, and assigns them a score (**dot
 
 Each byte’s vector goes through a small two-layer neural network that updates it so that it is ready for the next layer.
 
-## Linear and Softmax
+## 5\. Linear and Softmax
 
 At the end, the decoder’s output vector is turned into a probability for every next possible byte, and the most likely byte is chosen:
 
